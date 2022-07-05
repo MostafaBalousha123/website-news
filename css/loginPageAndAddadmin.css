@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+main {
+  height: 100vh;
+}
+
+/* main *{
+
+  border: red 2px solid;
+} */
+/********************************* Just For login page ******************************************/
+
+section#welcome-back {
+  background-color: #18345e;
+  color: white;
+  border: 0.5px #18345e solid;
+  height: 50%;
+  width: 100%;
+  border-bottom-left-radius: 30px ;
+  border-bottom-right-radius: 30px ;
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#welcome-back figure img {
+  width: 150px;
+  height: 150px;
+  margin: 60px auto 0;
+  display: block;
+}
+#welcome-back h1 {
+  width: 45%;
+  margin: 10px auto;
+  text-align: center;
+}
+#welcome-back p {
+  width: 75%;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: 300;
+}
+/*********************************For login page and h1 in other page******************************************/
+section#login{
+    height: 50%;
+padding: 8% 12%;
+}
+#login h1  {
+color: #18345e;
+padding: 1%;
+}
+/********************************Form *******************************************/
+form{
+   display: block;
+  height: max-content;
+  
+
+}
+ form *{
+    display: block;
+}
+form label{
+    color: #18345e;
+    margin: 15px 0 5px;
+    padding-left: 10px;
+}
+form input{
+    border: 0;
+    background-color: #F4F2F2;
+    height: 40px;
+    width: 100%;
+    padding: 2% ;
+    padding-left: 3%;
+    border-radius: 18px;
+    color: #18345e;
+
+}
+form input[type="submit"] {
+    background-color: #F0AB20;
+    margin-top: 30px;
+    cursor: pointer;
+}
+form input[type="submit"]:hover {
+  background-color: #18345e;
+  color: white
+}
+
+form input[type="radio"] {
+background-color: #18345e;
+width: 20px;
+display: inline;
+
+}
+
+form label.radio {
+  width: 20px;
+  display: inline;
+  }
+/***********************Table*******************************************************/
+
+
+
+/************************************Media Query***********************************************************/
+@media screen and (min-width: 768px){
+    section#welcome-back {
+        height: 50%;
+    }
+
+    #welcome-back figure{
+        margin-top: 120px;
+    }
+    #login{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1024px){
+main{
+    display: flex;
+}
+section#welcome-back{
+    height: 100%;
+    border-bottom-left-radius: 0 ;
+    border-bottom-right-radius: 30px ;
+    border-top-right-radius: 30px ;
+    width: 80%;
+}
+section#login{
+    height: 100%;
+}
+}

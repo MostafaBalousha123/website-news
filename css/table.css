@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.table {
+    width: 100%;
+    /* border: red 2px solid; */
+/* height: max-content; */
+}
+
+.table_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+    background-color: rgb(240, 240, 240);
+}
+
+.table_header p {
+    color: #000000;
+}
+/******************************************************************************************/
+button , td a , div#btn-in-table-header a {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 5px 7px;
+    color: #ffffff;
+    text-decoration: none;
+}
+#add-admin-btn{
+    background-color: #0298cf;
+}
+td a:nth-child(1) {
+    background-color: #0298cf;
+}
+td a:nth-child(2) {
+    background-color: #f80000;
+}
+td a:nth-child(3) {
+    background-color: #ffcc00;
+
+}
+.add_new {
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #0298cf;
+}
+.table_section {
+    height:95vh;
+    overflow: auto;
+    /* border: red 2px solid; */
+}
+table {
+    width: 100%;
+    table-layout: fixed;
+    min-width: 900px;
+    border-collapse: collapse;
+    
+}
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f6f9fc;
+    color: #8493a5;
+    font-size: 15px;
+}
+
+th,
+td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+    /* overflow: hidden; */
+}
+
+tr:hover td {
+    color: #0298cf;
+    background-color: #f6f9fc;
+}
+p.error{
+    color :rgb(164, 0, 0) ;
+  }
+  p.success{
+    color :rgb(26, 141, 0) ;
+  }
